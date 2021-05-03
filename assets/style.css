@@ -1,0 +1,116 @@
+/* commons */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.dbg{
+    border: 1px solid red;
+}
+
+body{
+    background-color: rgb(148, 0, 81);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+h3{
+    width: 100%;
+}
+
+/* calcola biglietto */
+.container{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.part{
+    width: 33%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(148, 0, 81);
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.inp{
+    border-radius: 5px;
+    border: 1px solid rgb(148, 0, 81);
+    display: block;
+    height: 30px;
+    width: 70%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.buttons{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn{
+    padding: 10px;
+    margin: 10px;
+    color: rgb(148, 0, 81);
+    font-size: 15px;
+}
+
+
+/* biglietto */
+.ticket{
+    background-color: white;
+    padding: 20px;
+}
+
+.grey_b{
+    display: inline-flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.solid{
+    background-color: gray;
+    padding: 20px;
+    width: 30%;
+}
+
+.trant{
+    padding: 10px;
+    width: 70%;
+}
+
+.stuff{
+    width: 24%;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+#nome_utente{
+    font-weight: 600;
+}

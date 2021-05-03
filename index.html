@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto treno Form</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+        <div class="part">
+            <p>Nome Cognome</p>
+            <input type="text" class="inp" id="nome_utente">
+        </div>
+        <div class="part">
+            <p>Km da percorrere</p>
+            <input type="text" class="inp" id="kms">
+        </div>
+        <div class="part">
+            <p>Fascia d'età</p>
+            <select type="text" class="inp" id="anni">
+                <option value="under">minore di 18</option>
+                <option value="norm">18-65</option>
+                <option value="over">over 65</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="genera" value="">Genera</button>
+            <button class="btn" onclick="Clear();">Annulla</button>
+        </div>
+    </div>
+
+    <h1>IL TUO BIGLIETTO</h1>
+
+    <div class="ticket">
+        <h2>DETTAGLIO PASSEGGERO</h2>
+        <div class="grey_b">
+            <div class="solid">
+                <h3>NOME PASSEGGERO</h3>
+                <h3 id="utente"></h3>
+            </div>
+            <div class="trant">
+                <div class="stuff">
+                    <p class="bold">Offerta</p>
+                    <p id="sconto"></p>
+                </div>
+                <div class="stuff">
+                    <p class="bold">Carrozza</p>
+                    <p id="coach_num"></p>
+                </div>
+                <div class="stuff">
+                    <p class="bold">Codice CP</p>
+                    <p id="codeCP"></p>
+                </div>
+                <div class="stuff">
+                    <p class="bold">Costo biglietto</p>
+                    <p id="prezzo"></p>
+                </div>
+
+            </div>
+        </div>
+    
+    
+    </div>
+
+    
+    <script src="./assets/main.js"></script>
+</body>
+</html>
