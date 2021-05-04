@@ -3,21 +3,22 @@ genera.addEventListener("click", function () {
     var nome = document.getElementById("nome_utente").value;
     var km = document.getElementById("kms").value;
     var age = document.getElementById("anni").value;
+    console.log(age);
+
 
     //mostra nome passeggero
-
     var msg_1 = document.getElementById("utente");
     msg_1.innerHTML = nome;
 
     //mostra sconto applicato
-    if (age === "minore di 18") {
+    if (age == "under") {
         var price_under = Math.round(((price - ((price / 100) * 20))) * 100) / 100.0;
         console.log(price_under);
         var msg_2 = document.getElementById("sconto");
         msg_2.innerHTML = "Sconto minorenni";
-    } else if (age === "over 65") {
+    } else if (age == "over") {
         var price_over = Math.round(((price - ((price / 100) * 40))) * 100) / 100.0;
-        console.log(price_over);
+        
         var msg_3 = document.getElementById("sconto");
         msg_3.innerHTML = "Sconto over 65";
     } else {
@@ -54,14 +55,15 @@ genera.addEventListener("click", function () {
 
 //annulla
 var annulla = document.getElementById("annulla");
-genera.addEventListener("click", clear);
+annulla.addEventListener("click", clear);
 
 function clear() {
     document.getElementById("nome_utente").value = "";
     document.getElementById("kms").value = "";
+    document.getElementById("anni").value = "under";
+    document.getElementById("utente").innerHTML = "";
+    document.getElementById("sconto").innerHTML = "";
+    document.getElementById("coach_num").innerHTML = "";
+    document.getElementById("codeCP").innerHTML = "";
+    document.getElementById("prezzo").innerHTML = "";
 }
-
-
-//ISSUES
-// 1 - non funzionano le formule per gli sconti
-// 2 - ogni tanto il prezzo diventa qualcosa come 15.959999999999999€ anche se in teoria c'è l'arrotondamento a due cifre decimali
